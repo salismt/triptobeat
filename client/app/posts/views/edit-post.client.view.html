@@ -1,0 +1,56 @@
+<div data-ng-controller="PostsCtrl">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<!-- Button = for mobile button collapse -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-main-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+				</button>
+				<a href="#!/" class="navbar-brand">Trip to Beat</a>
+			</div>
+			
+		</div>
+	</nav>
+
+	<section class="container" data-ng-init="findOne()">
+		<br>
+		<br>
+		<h1>Update Your Post</h1>
+		<form data-ng-submit="update()" class="form-signin" novalidate>
+
+			<div>
+				<label for="author" class="sr-only" data-ng-bind="post.author"></label>
+			</div>
+			
+			<div>
+				<label for="title" class="sr-only">Title</label>
+				<div>
+					<input type="text" data-ng-model="post.title" id="title" class="form-control" placeholder="Title">
+				</div>
+			</div>
+
+			<div>
+				<label for="description" class="sr-only">Description</label>
+				<div>
+					<textarea data-ng-model="post.description" class="form-control" id="description" cols="30" rows="10" placeholder="Describe your story.."></textarea>
+				</div>
+			</div>
+
+			<div>
+				<button type="submit" class="btn btn-sm btn-danger btn-block">Update</button>
+			</div>
+
+			<div data-ng-show="error">
+				<strong data-ng-bind="error"></strong>
+			</div>
+
+		</form>
+
+	</section>
+
+</div>

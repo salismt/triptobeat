@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trip To Beat</title>
+	<link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+	
+</head>
+<body ng-app="triptobeat">
+
+	<section ng-view class="main-section"></section>
+
+	<!-- CSS Dependencies -->
+	<script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Angular Setup -->
+	<script type="text/javascript" src="/lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="/lib/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="/lib/angular-resource/angular-resource.min.js"></script>
+
+	<!-- Main Module -->
+	<script type="text/javascript" src="/app/main/main.client.module.js"></script>
+	<script type="text/javascript" src="/app/main/config/main.client.routes.js"></script>
+
+	<!-- Posts Module -->
+	<script type="text/javascript" src="/app/posts/posts.client.module.js"></script>
+	<script type="text/javascript" src="/app/posts/services/posts.client.service.js"></script>
+	<script type="text/javascript" src="/app/posts/controllers/posts.client.controller.js"></script>
+	<script type="text/javascript" src="/app/posts/config/posts.client.routes.js"></script>
+
+
+	<!-- Load the main App -->
+	<script type="text/javascript" src="/app/application.js"></script>
+	
+</body>
+</html>
